@@ -1,0 +1,17 @@
+{
+  "name": "base_model_test",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "nodemon --exec 'mocha -R spec test/**/*.spec.js'"
+  },
+  "keywords": [],
+  "author": "Adam Colpitts <adam.colpitts@ballistiq.com>",
+  "license": "MIT",
+  "dependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0",
+    "mongoose": "^5.2.14",
+    "nodemon": "^1.18.4"
+  }
+}
