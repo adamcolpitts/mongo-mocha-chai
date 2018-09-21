@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
-const TEST_DATABASE = 'mongodb://localhost/base_model_test';
+const config = require('../config');
+const TEST_DATABASE = config.database + '_test';
 
 mongoose.Promise = global.Promise;
 

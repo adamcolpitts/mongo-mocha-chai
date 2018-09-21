@@ -1,7 +1,7 @@
 require('../test_helper');
 
 const expect = require('chai').expect;
-const Champion = require('../../src/models/champion');
+const Champion = require('../../app/models/champion');
 
 describe('Champion', () => {
   let champ;
@@ -34,5 +34,14 @@ describe('Champion', () => {
 
   it('should save a valid model', () => {
     expect(champ.isNew).to.equal(false);
+  });
+
+  it('should set `created_at` before first save', (done) => {
+    const testChamp = new Champion({ name: 'Test Champ' });
+    testChamp.save()
+      .then((doc) => {
+        expect(doc.created_at).not.to.equal(undefined);
+        done();
+      })
   });
 });

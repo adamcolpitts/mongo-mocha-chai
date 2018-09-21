@@ -29,7 +29,9 @@ module.exports = (paths) => {
     related_regions: [],
     related_sentient_beings: [],
     related_settlements: [],
-    related_technologies: []
+    related_technologies: [],
+    created_at: { type: Date },
+    updated_at: { type: Date }
   });
 
   schema.add(paths);

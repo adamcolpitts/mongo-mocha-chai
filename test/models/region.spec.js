@@ -1,7 +1,7 @@
 require('../test_helper');
 
 const expect = require('chai').expect;
-const Region = require('../../src/models/region');
+const Region = require('../../app/models/region');
 
 describe('Region', () => {
   let region;

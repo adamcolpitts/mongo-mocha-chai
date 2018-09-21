@@ -1,9 +1,9 @@
 require('../test_helper');
 
 const expect = require('chai').expect;
-const Champion = require('../../src/models/champion');
-const Region = require('../../src/models/region');
-const Weapon = require('../../src/models/weapon');
+const Champion = require('../../app/models/champion');
+const Region = require('../../app/models/region');
+const Weapon = require('../../app/models/weapon');
 
 describe('Champion Associations', () => {
   let champ, region, weapon;

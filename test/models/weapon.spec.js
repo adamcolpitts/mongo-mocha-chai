@@ -1,7 +1,7 @@
 require('../test_helper');
 
 const expect = require('chai').expect;
-const Weapon = require('../../src/models/weapon');
+const Weapon = require('../../app/models/weapon');
 
 describe('Weapon', () => {
   let weapon;
